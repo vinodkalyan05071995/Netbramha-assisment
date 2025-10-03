@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>NETBRAHMA</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="Assets/base.css">
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+            crossorigin="anonymous">
+    </head>
+
+    <body class="body">
+
+        <aside class="sidebar">
+            <div class="drawer-icon d-lg-none"
+                onclick="this.classList.toggle('expanded'); this.closest('.sidebar').classList.toggle('active')"></div>
+
+            <div class="sidebar-content d-none d-md-block">
+                <img src="img/netbramha-logo.svg" alt="Logo">
+            </div>
+            <div class="sidebar-content-wrapper">
+                <div class="sidebar-menu-content d-lg-none">
+                    <a class="sidebar-menu-content__link text-decoration-none"
+                        data-bs-toggle="collapse"
+                        href="#collapseExample" role="button"
+                        aria-expanded="false" aria-controls="collapseExample">
+                        <img src="img/overview.svg" alt="Logo"> <span
+                            class="sidebar-menu-content__link-text ml-3 font-16 fnt-regular clr-white">Overview</span>
+                        <span class="sidebar-menu-content__link-text-arrow">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="11"
+                                height="8" viewBox="0 0 11 8" fill="none">
+                                <path d="M10 6.5L5.5 2L1 6.5" stroke="white"
+                                    stroke-width="1.6" />
+                            </svg>
+                        </span>
+                    </a>
+                    <div class="collapse " id="collapseExample">
+
+                        <div class="card card-body border-0"
+                            style="--bs-card-bg: transparent;    --bs-card-spacer-x: 0.8rem;">
+                            <div class="d-flex">
+                                <div class="vr"></div>
+                                <ul class="ps-4 m-0 list-unstyled ">
+                                    <li>
+                                        <a href="#"
+                                            class="sidebar-menu-content__link-text ml-3 font-14 text-decoration-none fnt-regular clr-white">Score
+                                            & Report</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"
+                                            class="sidebar-menu-content__link-text ml-3 font-14 text-decoration-none fnt-regular clr-white">Summary</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"
+                                            class="sidebar-menu-content__link-text ml-3 font-14 text-decoration-none fnt-regular clr-white">History</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"
+                                            class="sidebar-menu-content__link-text ml-3 font-14 text-decoration-none fnt-regular clr-white">Where
+                                            You Stand</a>
+                                    </li>
+                                </ul>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="sidebar-menu-content d-none d-lg-block">
+                    <a class="sidebar-menu-content__link text-decoration-none"
+                        data-bs-toggle="collapse"
+                        href="#collapseExample" role="button"
+                        aria-expanded="false" aria-controls="collapseExample">
+                        <img src="img/overview.svg" alt="Logo"> <span
+                            class="sidebar-menu-content__link-text ml-3 font-16 fnt-regular clr-white">Overview</span>
+                        <span class="sidebar-menu-content__link-text-arrow">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="11"
+                                height="8" viewBox="0 0 11 8" fill="none">
+                                <path d="M10 6.5L5.5 2L1 6.5" stroke="white"
+                                    stroke-width="1.6" />
+                            </svg>
+                        </span>
+                    </a>
+                    <div class="collapse show" id="collapseExample">
+
+                        <div class="card card-body border-0"
+                            style="--bs-card-bg: transparent;    --bs-card-spacer-x: 0.8rem;">
+                            <div class="d-flex">
+                                <div class="vr"></div>
+                                <ul class="ps-4 m-0 list-unstyled ">
+                                    <li>
+                                        <a href="#"
+                                            class="sidebar-menu-content__link-text ml-3 font-14 text-decoration-none fnt-regular clr-white">Score
+                                            & Report</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"
+                                            class="sidebar-menu-content__link-text ml-3 font-14 text-decoration-none fnt-regular clr-white">Summary</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"
+                                            class="sidebar-menu-content__link-text ml-3 font-14 text-decoration-none fnt-regular clr-white">History</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"
+                                            class="sidebar-menu-content__link-text ml-3 font-14 text-decoration-none fnt-regular clr-white">Where
+                                            You Stand</a>
+                                    </li>
+                                </ul>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <ul class="sidebar-menu">
+                    <li class="sidebar-menu__item">
+                        <a href="#"
+                            class="sidebar-menu__item-link text-decoration-none">
+                            <img src="./img/report.svg" alt="Logo">
+                            <span
+                                class="sidebar-menu__item-text font-16 fnt-regular clr-white">Your
+                                Report</span>
+                        </a>
+                    </li>
+                    <li class="sidebar-menu__item">
+                        <a href="#"
+                            class="sidebar-menu__item-link text-decoration-none">
+                            <img src="./img/alert.svg" alt="Logo">
+                            <span
+                                class="sidebar-menu__item-text font-16 fnt-regular clr-white">Alerts</span>
+                            <div
+                                class="ms-3 d-flex align-items-center justify-content-center badge-nt"><span
+                                    class>4</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="sidebar-menu__item">
+                        <a href="#"
+                            class="sidebar-menu__item-link text-decoration-none">
+                            <img src="./img/simulator.svg" alt="Logo">
+                            <span
+                                class="sidebar-menu__item-text font-16 fnt-regular clr-white">Simulator</span>
+                        </a>
+                    </li>
+                    <li class="sidebar-menu__item">
+                        <a href="#"
+                            class="sidebar-menu__item-link text-decoration-none">
+                            <img src="./img/education.svg" alt="Logo">
+                            <span
+                                class="sidebar-menu__item-text font-16 fnt-regular clr-white">Education</span>
+                        </a>
+                    </li>
+                    <li class="sidebar-menu__item">
+                        <a href="#"
+                            class="sidebar-menu__item-link text-decoration-none">
+                            <img src="./img/upload.svg" alt="Logo">
+                            <span
+                                class="sidebar-menu__item-text font-16 fnt-regular clr-white">Upgrade
+                                My Plan</span>
+                        </a>
+                    </li>
+                    <li class="sidebar-menu__item">
+                        <a href="#"
+                            class="sidebar-menu__item-link text-decoration-none">
+                            <img src="./img/rewards.svg" alt="Logo">
+                            <span
+                                class="sidebar-menu__item-text font-16 fnt-regular clr-white">Rewards
+                                Program</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </aside>
+        <div class="content-side">
+            <header class="header">
+                <div class="container g-5">
+                    <div class="row">
+                        <div class="col-12">
+                            <ul
+                                class="header-content m-0 d-flex align-items-center justify-content-end">
+                                <li>
+                                    <a href="#"
+                                        class="header-content__item d-flex align-items-center gap-1">
+                                        <img src="img/question.svg" alt="Logo">
+                                        <span
+                                            class="font-14 d-none d-md-block fnt-regular clr-black">How
+                                            It Works</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a
+                                        class="nav-link dropdown-toggle font-14 fnt-regular clr-black"
+                                        data-bs-toggle="dropdown" href="#"
+                                        role="button"
+                                        aria-expanded="false">English</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item"
+                                                href="#">French</a></li>
+                                        <li><a class="dropdown-item"
+                                                href="#">Dutch</a></li>
+                                        <li><a class="dropdown-item"
+                                                href="#">German</a></li>
+                                        <li><a class="dropdown-item"
+                                                href="#">Spanish</a></li>
+                                        <li><a class="dropdown-item"
+                                                href="#">Italian</a></li>
+                                        <li><a class="dropdown-item"
+                                                href="#">Portuguese</a></li>
+
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="header-content__item d-flex align-items-center gap-1">
+                                        <img src="img/account.svg" alt="Logo">
+                                        <span
+                                            class="font-14 d-none d-md-block fnt-regular clr-black">My
+                                            Account</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="header-content__item d-flex align-items-center gap-1">
+                                        <img src="img/logout.svg" alt="Logo">
+                                        <span
+                                            class="font-14 d-none d-md-block fnt-regular clr-black">
+                                            Logout</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <section class="py-3 py-md-5 credit-score">
+                <div class="container g-5">
+                    <div class="row g-3">
+                        <div class="col-12 col-lg-6">
+                            <div class="score-card">
+                                <h2 class="score-card__title">Hello, Rahul
+                                    L.</h2>
+
+                                <div class="score-card__wrapper">
+
+                                    <credit-score-component credit-score
+                                        class="score-card__gauge" score="767"
+                                        min="300"
+                                        max="900"
+                                        segments="[200, 50, 50, 50, 50]"
+                                        colors="['#E15825', '#F18200', '#FCD800', '#A9D161', '#009900']">
+                                        <div class="score-card__canvas">
+                                            <canvas class="gauge" width="260"
+                                                height="130"></canvas>
+                                        </div>
+                                        <div
+                                            class="score-card__range"><span>300</span><span>900</span></div>
+                                        <div class="score-card__score"
+                                            id="score">0</div>
+                                    </credit-score-component>
+
+                                </div>
+                                <div class="score-card__footer">
+                                    <a href="#" class="link">Score Analysis</a>
+                                    <button class="btn btn-fill">Refresh
+                                        Now</button>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <div class="np-report box-shadow">
+                                <div
+                                    class="np-report__header d-flex justify-content-between ">
+                                    <div
+                                        class="np-report__header-left flex-grow-1 g-2">
+                                        <h2
+                                            class="font-18 clr-primary fnt-bold">NB
+                                            Report</h2>
+                                        <p
+                                            class="font-16 clr-black fnt-regular">Get
+                                            your personalized NB Report to plan
+                                            your financial future.</p>
+                                    </div>
+                                    <div class="np-report__header-right">
+                                        <img src="img/np-report-icon.svg"
+                                            alt="NB Report">
+                                    </div>
+                                </div>
+                                <a href class="link d-block">
+                                    <div class="d-flex align-items-center">
+                                        <img src="img/icons.svg" alt="Eye Icon">
+                                        <span class="mx-2">View Your NB
+                                            Report</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                            width="8" height="12"
+                                            viewBox="0 0 8 12"
+                                            fill="none">
+                                            <path
+                                                d="M1.40002 11.6538L0.346191 10.6L4.94619 6L0.346191 1.4L1.40002 0.346176L7.05384 6L1.40002 11.6538Z"
+                                                fill="var(--color-primary)" />
+                                        </svg>
+                                    </div>
+                                </a>
+                                <a href class="link d-block mt-3">
+                                    <div class="d-flex align-items-center">
+                                        <img src="img/icon-bounding.svg"
+                                            alt="Eye Icon">
+                                        <span class="mx-2">Download Your NB
+                                            Report with summary</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                            width="8" height="12"
+                                            viewBox="0 0 8 12"
+                                            fill="none">
+                                            <path
+                                                d="M1.40002 11.6538L0.346191 10.6L4.94619 6L0.346191 1.4L1.40002 0.346176L7.05384 6L1.40002 11.6538Z"
+                                                fill="var(--color-primary)" />
+                                        </svg>
+                                    </div>
+                                </a>
+                            </div>
+                            <div
+                                class="np-report np-report--content d-md-flex align-items-center justify-content-between pe-md-2 mt-4">
+                                <div class="np-report__content-left ">
+
+                                    <p class="font-16 clr-black fnt-regular">You
+                                        currently have an active subscription.
+                                        You will be able to access Free Annual
+                                        NB Score & Report after the
+                                        subscription period expires.</p>
+                                </div>
+                                <div class="np-report__content-right">
+                                    <img src="img/Settled Credit.svg"
+                                        alt="NB Report">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+            <section class="pt-3 pt-md-5 yourAccounts">
+                <div class="container g-5">
+                    <div class="row g-3">
+                        <div class="col-12 col-lg-8">
+                            <div class="yourAccounts__container">
+                                <div
+                                    class="yourAccounts__header mb-3 d-flex justify-content-between align-items-center">
+                                    <h2
+                                        class="font-18 clr-primary fnt-bold d-flex align-items-center g-2">
+                                        <span>Your
+                                            Accounts </span>
+                                        <img
+                                            src="img/info.svg" alt="Info"
+                                            class="ms-2"></h2>
+                                    <ul class="nav nav-pills "
+                                        id="pills-tab"
+                                        role="tablist">
+                                        <li class="nav-item"
+                                            role="presentation">
+                                            <button
+                                                class="nav-link active"
+                                                id="pills-home-tab"
+                                                data-bs-toggle="pill"
+                                                data-bs-target="#pills-home"
+                                                type="button" role="tab"
+                                                aria-controls="pills-home"
+                                                aria-selected="true">All</button>
+                                        </li>
+                                        <li class="nav-item"
+                                            role="presentation">
+                                            <button class="nav-link"
+                                                id="pills-profile-tab"
+                                                data-bs-toggle="pill"
+                                                data-bs-target="#pills-profile"
+                                                type="button" role="tab"
+                                                aria-controls="pills-profile"
+                                                aria-selected="false">Open</button>
+                                        </li>
+                                        <li class="nav-item"
+                                            role="presentation">
+                                            <button class="nav-link"
+                                                id="pills-contact-tab"
+                                                data-bs-toggle="pill"
+                                                data-bs-target="#pills-contact"
+                                                type="button" role="tab"
+                                                aria-controls="pills-contact"
+                                                aria-selected="false">Closed</button>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                                <div class="yourAccounts__content">
+
+                                    <div class="tab-content"
+                                        id="pills-tabContent">
+                                        <div
+                                            class="tab-pane fade show active"
+                                            id="pills-home"
+                                            role="tabpanel"
+                                            aria-labelledby="pills-home-tab"
+                                            tabindex="0">
+                                            <div
+                                                class="d-md-flex align-items-center w-100 gap-4">
+                                                <div
+                                                    class="chart-contain-wrapper m-auto">
+                                                    <credit-score-component
+                                                        doughnut
+                                                        class="doughnut__gauge"
+                                                        segments="[200, 50, 50, 50, 50]"
+                                                        colors="['#E15825', '#F18200', '#FCD800', '#A9D161', '#009900']">
+                                                        <div
+                                                            class="chart-container">
+                                                            <canvas
+                                                                class="gauge"
+                                                                width="260"
+                                                                height="130"></canvas>
+
+                                                            <div
+                                                                class="chart-container__text font-14 fnt-bold">
+                                                                Total<br />Accounts<br />
+                                                                <span
+                                                                    class="font-16 fnt-regular">13</span>
+                                                            </div>
+                                                        </div>
+
+                                                    </credit-score-component>
+                                                </div>
+                                                <div
+                                                    class="legend flex-grow-1">
+                                                    <div
+                                                        class="legend-item">
+                                                        <div
+                                                            class="legend-label">
+                                                            <div
+                                                                class="legend-color"
+                                                                style="background:#8b77d9;"></div>
+                                                            <span>
+                                                                Closed
+                                                                credit
+                                                                cards</span>
+                                                        </div>
+                                                        <span
+                                                            class="font-16 fnt-regular">4</span>
+                                                    </div>
+                                                    <div
+                                                        class="legend-item">
+                                                        <div
+                                                            class="legend-label">
+                                                            <div
+                                                                class="legend-color"
+                                                                style="background:#f7e07b;"></div>
+                                                            <span>
+                                                                Closed
+                                                                loans</span>
+                                                        </div>
+                                                        <span
+                                                            class="font-16 fnt-regular">1</span>
+                                                    </div>
+                                                    <div
+                                                        class="legend-item">
+                                                        <div
+                                                            class="legend-label">
+                                                            <div
+                                                                class="legend-color"
+                                                                style="background:#9bdaf1;"></div>
+                                                            <span> Open
+                                                                credit
+                                                                cards</span>
+                                                        </div>
+                                                        <span
+                                                            class="font-16 fnt-regular">2</span>
+                                                    </div>
+                                                    <div
+                                                        class="legend-item">
+                                                        <div
+                                                            class="legend-label">
+                                                            <div
+                                                                class="legend-color"
+                                                                style="background:#7edb95;"></div>
+                                                            <span> Open
+                                                                loans</span>
+                                                        </div>
+                                                        <span
+                                                            class="font-16 fnt-regular">6</span>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                        <div class="tab-pane fade"
+                                            id="pills-profile"
+                                            role="tabpanel"
+                                            aria-labelledby="pills-profile-tab"
+                                            tabindex="0">1
+                                        </div>
+                                        <div class="tab-pane fade"
+                                            id="pills-contact"
+                                            role="tabpanel"
+                                            aria-labelledby="pills-contact-tab"
+                                            tabindex="0">2
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="np-score-history pt-3 pt-md-5">
+                <div class="container g-5">
+                    <div class="row g-3">
+                        <div class="col-12">
+                            <div class="np-score-history__container">
+                                <div class="np-score-history__header">
+                                    <h2
+                                        class="font-18 clr-primary fnt-bold">
+                                        <span> NB
+                                            Score History</span> <img
+                                            src="img/info.svg" alt="Info"
+                                            class="ms-2"></h2>
+                                </div>
+                                <div class="np-score-history__content">
+                                    <div class="row g-3">
+                                        <div class="col-12 col-lg-9">
+                                            <div
+                                                class="np-score-history__content-left">
+                                                <div
+                                                    class="np-score-history__content-left-item">
+                                                    <p
+                                                        class="font-16 clr-black fnt-regular">Trended
+                                                        view of the
+                                                        changes
+                                                        in
+                                                        your NB
+                                                        Score with every
+                                                        refresh.</p>
+                                                </div>
+                                                <div
+                                                    class="np-score-history__content-graph">
+                                                    <credit-score-component
+                                                        line-chart>
+                                                        <canvas
+                                                            class="gauge"
+                                                            width="260"
+                                                            height="130"></canvas>
+                                                    </credit-score-component>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-lg-3">
+                                            <div
+                                                class="np-score-history__content-right">
+                                                <h3
+                                                    class="font-16 pb-2 clr-black fnt-bold">Your
+                                                    Score</h3>
+
+                                                <ul
+                                                    class="list-unstyled mb-0">
+                                                    <li
+                                                        class="d-flex justify-content-between align-items-center np-score-history__content-right-item">
+                                                        <div
+                                                            class="font-14 clr-black fnt-regular">
+                                                            <img
+                                                                src="img/SUCCESS-ARROW.svg"
+                                                                alt="Eye Icon">
+                                                            <span
+                                                                class=" ms-2 font-14 clr-black fnt-bold">
+                                                                493</span>
+                                                        </div>
+                                                        <span
+                                                            class="font-14 clr-black fnt-regular">18/08/2022</span>
+                                                    </li>
+                                                    <li
+                                                        class="d-flex justify-content-between align-items-center np-score-history__content-right-item">
+                                                        <div
+                                                            class="font-14 clr-black fnt-regular">
+                                                            <img
+                                                                src="img/SUCCESS-ARROW.svg"
+                                                                alt="Eye Icon">
+                                                            <span
+                                                                class=" ms-2 font-14 clr-black fnt-bold">
+                                                                493</span>
+                                                        </div>
+                                                        <span
+                                                            class="font-14 clr-black fnt-regular">18/08/2022</span>
+                                                    </li>
+                                                    <li
+                                                        class="d-flex justify-content-between align-items-center np-score-history__content-right-item">
+                                                        <div
+                                                            class="font-14 clr-black fnt-regular">
+                                                            <img
+                                                                src="img/SUCCESS-ARROW.svg"
+                                                                alt="Eye Icon">
+                                                            <span
+                                                                class=" ms-2 font-14 clr-black fnt-bold">
+                                                                493</span>
+                                                        </div>
+                                                        <span
+                                                            class="font-14 clr-black fnt-regular">18/08/2022</span>
+                                                    </li>
+                                                    <li
+                                                        class="d-flex justify-content-between align-items-center np-score-history__content-right-item">
+                                                        <div
+                                                            class="font-14 clr-black fnt-regular">
+                                                            <img
+                                                                src="img/SUCCESS-ARROW.svg"
+                                                                alt="Eye Icon">
+                                                            <span
+                                                                class=" ms-2 font-14 clr-black fnt-bold">
+                                                                493</span>
+                                                        </div>
+                                                        <span
+                                                            class="font-14 clr-black fnt-regular">18/08/2022</span>
+                                                    </li>
+                                                </ul>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="pt-3 pt-md-5 where-you-stand mb-4">
+                <div class="container g-5">
+                    <div class="row g-3">
+                        <div class="col-12">
+                            <div class="where-you-stand__container">
+                                <h2
+                                    class="font-18 clr-primary fnt-bold"><span>Where
+                                        You Stand</span> <img
+                                        src="img/info.svg" alt="Info"
+                                        class="ms-2"></h2>
+
+                                <div class="where-you-stand__content">
+                                    <div
+                                        class="where-you-stand__content-inner pb-0">
+                                        <ul
+                                            class="where-you-stand__content-inner-score-list">
+                                            <li
+                                                class="where-you-stand__content-inner-score-list-item"
+                                                style="--color-bg: #E15825;">
+
+                                                <span
+                                                    class="where-you-stand__content-inner-score-list-item-value">15%</span>
+                                            </li>
+                                            <li
+                                                class="where-you-stand__content-inner-score-list-item"
+                                                style="--color-bg: #F18200;">
+
+                                                <span
+                                                    class="where-you-stand__content-inner-score-list-item-value">15%</span>
+                                            </li>
+                                            <li
+                                                class="where-you-stand__content-inner-score-list-item"
+                                                style="--color-bg: #FCD800;">
+
+                                                <span
+                                                    class="where-you-stand__content-inner-score-list-item-value">15%</span>
+
+                                                <div
+                                                    class="triangle-container">
+                                                    <div
+                                                        class="triangle-outer">
+
+                                                    </div>
+
+                                                    <div
+                                                        class="triangle-inner">
+
+                                                    </div>
+                                                </div>
+
+                                            </li>
+                                            <li
+                                                class="where-you-stand__content-inner-score-list-item"
+                                                style="--color-bg: #A9D161;">
+
+                                                <span
+                                                    class="where-you-stand__content-inner-score-list-item-value">15%</span>
+                                            </li>
+                                            <li
+                                                class="where-you-stand__content-inner-score-list-item"
+                                                style="--color-bg: #009900;">
+
+                                                <span
+                                                    class="where-you-stand__content-inner-score-list-item-value">15%</span>
+                                            </li>
+                                        </ul>
+                                        <div
+                                            class="where-you-stand__content-inner-score-list-item-value-wrapper mt-3 d-flex flex-wrap justify-content-center align-items-center">
+                                            <div>
+                                                <span
+                                                    class="font-14 fnt-bold clr-black">Your
+                                                    Score</span>
+                                                <div>
+
+                                                    <span
+                                                        class="font-40 fnt-bold clr-black">493</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="where-you-stand__range-score d-flex flex-wrap justify-content-center align-items-center gap-4">
+                                            <span
+                                                class="font-14 fnt-regular">Score
+                                                Range</span>
+                                            <div
+                                                class="range-score-item-wrapper d-flex align-items-center gap-2">
+                                                <div
+                                                    class="range-score-item"
+                                                    style="--color-bg: #E15825;"></div>
+                                                <div
+                                                    class="range-score-content font-16 fnt-bold">300-722</div>
+                                            </div>
+                                            <div
+                                                class="range-score-item-wrapper d-flex align-items-center gap-2">
+                                                <div
+                                                    class="range-score-item"
+                                                    style="--color-bg: #F18200;"></div>
+                                                <div
+                                                    class="range-score-content font-16 fnt-bold">723-747</div>
+                                            </div>
+                                            <div
+                                                class="range-score-item-wrapper d-flex align-items-center gap-2">
+                                                <div
+                                                    class="range-score-item"
+                                                    style="--color-bg: #FCD800;"></div>
+                                                <div
+                                                    class="range-score-content font-16 fnt-bold">748-764</div>
+                                            </div>
+                                            <div
+                                                class="range-score-item-wrapper d-flex align-items-center gap-2">
+                                                <div
+                                                    class="range-score-item"
+                                                    style="--color-bg: #A9D161;"></div>
+                                                <div
+                                                    class="range-score-content font-16 fnt-bold">765-777</div>
+                                            </div>
+                                            <div
+                                                class="range-score-item-wrapper d-flex align-items-center gap-2">
+                                                <div
+                                                    class="range-score-item"
+                                                    style="--color-bg: #009900;"></div>
+                                                <div
+                                                    class="range-score-content font-16 fnt-bold">778-900</div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                    <div
+                                        class="where-you-stand__content-inner-score-list-item-value-wrapper mt-3 text-center">
+                                        <p
+                                            class="font-16 fnt-regular clr-black mb-1">Your
+                                            score has been updated
+                                            successfully. Your new
+                                            score is 493.</p>
+                                        <p
+                                            class="font-14 fnt-regular clr-black mb-0">Based
+                                            on the NB Data</p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </section>
+            <footer class="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="footer-content ">
+                                <p
+                                    class="font-14 fnt-regular clr-black mb-3 text-center">©
+                                    Copyright 2025 NetBramha Studio LLP.
+                                    All
+                                    Rights Reserved.</p>
+                                <ul
+                                    class="list-unstyled d-flex align-items-center justify-content-center mb-2 gap-3 gap-md-5">
+                                    <li>
+                                        <a href="#"
+                                            class="font-14 fnt-regular clr-black">FAQs</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"
+                                            class="font-14 fnt-regular clr-black">Terms
+                                            of Service</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"
+                                            class="font-14 fnt-regular clr-black">Privacy
+                                            Policy</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"
+                                            class="font-14 fnt-regular clr-black">Raise
+                                            a Dispute</a>
+                                    </li>
+                                </ul>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </footer>
+
+        </div>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+            crossorigin="anonymous"></script>
+        <script src="Assets/chart.umd.js" defer></script>
+        <script src="Assets/guage.js" defer></script>
+    </body>
+
+</html>
