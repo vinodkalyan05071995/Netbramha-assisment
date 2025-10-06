@@ -105,6 +105,7 @@
 .legend-item {
     display: flex;
     justify-content: space-between;
+
     padding: 10px 8px;
     margin-bottom: 8px;
     font-size: 14px;
@@ -169,6 +170,10 @@
     credit-score-component {
         height: 300px;
         display: block;
+
+        @media screen and (max-width: 767px) {
+            height: 200px;
+        }
     }
 
     &__content-right {
@@ -204,6 +209,10 @@
             background-color: var(--color-white);
             border-radius: 10px;
 
+            @media screen and (max-width: 767px) {
+                padding: 14px;
+            }
+
             &-score-list {
                 list-style: none;
                 padding: 0;
@@ -212,6 +221,7 @@
                 justify-content: space-between;
                 align-items: center;
                 gap: 3px;
+                flex-wrap: wrap;
             }
 
 
@@ -221,6 +231,10 @@
                     background-color: var(--color-bg);
                     padding: 16px 10px 12px 10px;
                     margin-bottom: 0px;
+
+                    @media screen and (max-width: 767px) {
+                        padding: 4px;
+                    }
 
                     &-value {
                         font-size: 18px;

@@ -374,6 +374,12 @@ header {
   height: 300px;
   display: block;
 }
+@media screen and (max-width: 767px) {
+  .np-score-history__content-graph,
+  .np-score-history credit-score-component {
+    height: 200px;
+  }
+}
 .np-score-history__content-right {
   padding: 12px;
   background-color: var(--color-white);
@@ -400,6 +406,11 @@ header {
   background-color: var(--color-white);
   border-radius: 10px;
 }
+@media screen and (max-width: 767px) {
+  .where-you-stand__content-inner {
+    padding: 14px;
+  }
+}
 .where-you-stand__content-inner-score-list {
   list-style: none;
   padding: 0;
@@ -408,12 +419,18 @@ header {
   justify-content: space-between;
   align-items: center;
   gap: 3px;
+  flex-wrap: wrap;
 }
 .where-you-stand__content-inner-score-list-item {
   position: relative;
   background-color: var(--color-bg);
   padding: 16px 10px 12px 10px;
   margin-bottom: 0px;
+}
+@media screen and (max-width: 767px) {
+  .where-you-stand__content-inner-score-list-item {
+    padding: 4px;
+  }
 }
 .where-you-stand__content-inner-score-list-item-value {
   font-size: 18px;
