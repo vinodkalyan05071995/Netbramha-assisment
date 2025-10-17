@@ -453,6 +453,8 @@ body {
     }
 
     &__content-card {
+        cursor: pointer;
+
         input:checked+& {
             box-shadow: 4px 8px 16px 0px #0000000F;
             border: 1px solid #005365CC
