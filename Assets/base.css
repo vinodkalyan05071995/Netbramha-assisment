@@ -888,7 +888,7 @@ body {
   position: relative;
   padding: 24px 12px;
   background-color: var(--color-white);
-  border-radius: 16px;
+  border-radius: 8px;
   flex-basis: 32.4%;
 }
 .site__content-card.active {
