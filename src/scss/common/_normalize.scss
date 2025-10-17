@@ -25,7 +25,7 @@ html {
 
 body {
     margin: 0;
-    font-family: "Roboto", sans-serif;
+    font-family: "intro", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
@@ -410,6 +410,7 @@ p {
     line-height: calc(var(--font-body-scale) * 1.3 * 16px);
     font-weight: var(--font-body-weight);
     margin-bottom: 8px;
+    color: var(--color-black);
     // word-wrap: break-word;
     word-break: break-word;
     // @media screen and (max-width: 767px) {
@@ -417,6 +418,25 @@ p {
     //   line-height: 22px;
     // }
 }
+
+h2,
+.h2 {
+    font-size: 32px !important;
+    font-weight: 700 !important;
+    line-height: 140% !important;
+    color: var(--color-b) !important;
+
+    font-family: "Poppins", sans-serif !important;
+}
+
+h3,
+.h3 {
+    font-size: 24px !important;
+    font-weight: 700 !important;
+    line-height: 140% !important;
+    color: var(--color-b) !important;
+}
+
 
 blockquote {
     font-size: calc(var(--font-body-scale) * 20px);
@@ -467,6 +487,10 @@ select {
     // }
 }
 
+.clr-gry {
+    color: var(--color-gray);
+}
+
 :root {
     --color-black: #262626;
     --color-primary: #046899;
@@ -476,4 +500,6 @@ select {
     --color-white: #FFFFFF;
     --color-gray: #595959;
     --color-light-gray: #F7F9FA;
+    --color-b: #000000;
+    --color-green: #005E72;
 }

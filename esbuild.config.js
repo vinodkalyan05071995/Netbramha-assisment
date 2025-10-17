@@ -24,7 +24,12 @@ import { sassPlugin } from 'esbuild-sass-plugin';
     plugins: [sassPlugin()],
     loader: {
       '.js': 'js',
-      '.scss': 'css'
+      '.scss': 'css',
+      '.otf': 'file',
+      '.ttf': 'file',
+      '.woff': 'file',
+      '.woff2': 'file',
+      '.eot': 'file'
     },
     target: 'es2020',
     logLevel: 'info'
