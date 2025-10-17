@@ -885,13 +885,16 @@ body {
   margin-bottom: 40px;
 }
 .site__content-card {
+  cursor: pointer;
   position: relative;
   padding: 24px 12px;
   background-color: var(--color-white);
   border-radius: 8px;
   flex-basis: 32.4%;
+  border: 1px solid transparent;
+  transition: all 0.3s ease;
 }
-.site__content-card.active {
+input:checked + .site__content-card {
   box-shadow: 4px 8px 16px 0px rgba(0, 0, 0, 0.0588235294);
   border: 1px solid rgba(0, 83, 101, 0.8);
 }
@@ -913,7 +916,7 @@ body {
   align-items: center;
   justify-content: flex-end;
 }
-.form-check-input + label {
+.form-check-input + .site__content-card label {
   width: 18px;
   height: 18px;
   border-radius: 50%;
@@ -921,8 +924,12 @@ body {
   border: 1px solid #BFBFBF;
   position: relative;
   cursor: pointer;
+  transition: all 0.3s ease;
 }
-.form-check-input:checked + label::after {
+.form-check-input + .site__content-card label::after {
+  transition: all 0.3s ease;
+}
+.form-check-input:checked + .site__content-card label::after {
   content: "";
   display: block;
   width: 12px;

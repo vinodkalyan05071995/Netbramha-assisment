@@ -453,16 +453,19 @@ body {
     }
 
     &__content-card {
-        &.active {
+        input:checked+& {
             box-shadow: 4px 8px 16px 0px #0000000F;
             border: 1px solid #005365CC
         }
 
+
         position: relative;
         padding: 24px 12px;
         background-color: var(--color-white);
-        border-radius: 16px;
+        border-radius: 8px;
         flex-basis: 32.4%;
+        border: 1px solid transparent;
+        transition: all 0.3s ease;
 
         @media (max-width: 992px) {
             flex-basis: 31.4%
@@ -485,7 +488,7 @@ body {
 }
 
 .form-check-input {
-    &+label {
+    &+.site__content-card label {
         width: 18px;
         height: 18px;
         border-radius: 50%;
@@ -493,10 +496,15 @@ body {
         border: 1px solid #BFBFBF;
         position: relative;
         cursor: pointer;
+        transition: all 0.3s ease;
+
+        &::after {
+            transition: all 0.3s ease;
+        }
     }
 
     &:checked {
-        &+label {
+        &+.site__content-card label {
             &::after {
                 content: '';
                 display: block;
@@ -552,7 +560,6 @@ body {
 
     }
 
-    &__content-img {}
 
     &__container {
         border: 1px solid #E6E6E6;
